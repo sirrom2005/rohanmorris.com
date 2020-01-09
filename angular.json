@@ -24,9 +24,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/materialdesignicons.min.css",
+              "src/assets/css/style.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/scrollspy.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/app.js"
+            ]
           },
           "configurations": {
             "production": {
