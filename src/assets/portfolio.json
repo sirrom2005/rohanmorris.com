@@ -1,0 +1,21 @@
+[
+    {
+        "title":"FSC Jamaica",
+        "url":"http://www.fscjamaica.org/",
+        "task":"Design | Web Programming",
+        "desc":"Full development of the company website & CMS."
+    },
+    {
+        "title":"Api Development",
+        "url":"",
+        "task":"Rest/Soap Api development",
+        "desc":"Api web services development for intigration in other systems"
+    },
+    {
+        "title":"WordPress development",
+        "url":"http://gleanerblogs.com",
+        "task":"Design | Web Programming",
+        "desc":"WordPress customization"
+    }
+]
+

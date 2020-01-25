@@ -1,0 +1,38 @@
+<!-- Clients Start -->
+<section class="section" id="clients">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="text-center mb-5">
+                    <h4 class="text-uppercase mb-0">Portfolio</h4>
+                    <div class="my-3">
+                        <img src="../../assets/images/title-border.png" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                    <p class="text-muted f-14">Below is a list a few of the many items that i've work on.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div *ngFor="let job of data" class="owl-carousel owl-theme col-md-4">
+                <div class="item">
+                    <div class="testi-content testi-content-1 text-center m-3 p-4 position-relative">
+                        <p class="text-muted mb-4 position-relative f-15">{{job.desc}}</p>
+                       <h5 class="title mb-0 user-name mt-4 f-18">
+                            <ng-container *ngIf="job.url; then showUrl; else hideUrl"></ng-container>    
+                            <ng-template #showUrl>
+                                <a *ngIf="job.url" href="{{job.url}}" target="_blank">{{job.title}}</a>
+                            </ng-template> 
+                            <ng-template #hideUrl>
+                                {{job.title}}
+                            </ng-template>                     
+                        </h5>
+                        <p class="text-muted mb-2 f-15"><span class="badge badge-primary">{{job.task}}</span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Clients End -->
